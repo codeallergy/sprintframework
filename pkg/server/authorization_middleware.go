@@ -66,7 +66,7 @@ func (t *implAuthorizationMiddleware) PostConstruct() (err error) {
 		if err != nil {
 			return err
 		}
-		fmt.Printf("export %s_AUTH %s\n", strings.ToUpper(t.Application.Name()), authToken)
+		fmt.Printf("export %s_AUTH=%s\n", strings.ToUpper(t.Application.Name()), authToken)
 	}
 
 	t.secretKey, err = base64.RawURLEncoding.DecodeString(secret)
