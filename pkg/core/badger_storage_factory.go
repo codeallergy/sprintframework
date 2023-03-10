@@ -31,8 +31,8 @@ import (
 type implBadgerStorageFactory struct {
 	beanName          string
 
-	Log                               *zap.Logger                             `inject`
-	Application                       sprint.Application                       `inject`
+	Log                               *zap.Logger                           `inject`
+	Application                       sprint.Application                    `inject`
 	Properties                        glue.Properties                       `inject`
 	SystemEnvironmentPropertyResolver sprint.SystemEnvironmentPropertyResolver `inject`
 

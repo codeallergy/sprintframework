@@ -3,12 +3,12 @@ module github.com/codeallergy/sprintframework
 go 1.17
 
 require (
-	github.com/codeallergy/badgerstore v1.0.0
+	github.com/codeallergy/badgerstore v1.0.3
 	github.com/codeallergy/base62 v1.0.0
 	github.com/codeallergy/glue v1.0.2
 	github.com/codeallergy/properties v1.0.0
 	github.com/codeallergy/sprint v1.0.4
-	github.com/codeallergy/store v1.0.1
+	github.com/codeallergy/store v1.0.3
 	github.com/codeallergy/uuid v1.0.1
 	github.com/fsnotify/fsnotify v1.5.4
 	github.com/go-acme/lego/v4 v4.8.0
@@ -33,8 +33,8 @@ require (
 )
 
 require (
-	github.com/codeallergy/boltstore v1.0.0
-	github.com/codeallergy/cachestore v1.0.0
+	github.com/codeallergy/boltstore v1.0.3
+	github.com/codeallergy/cachestore v1.0.3
 	github.com/codeallergy/seal v1.0.0
 	github.com/codeallergy/sealmod v1.0.0
 	github.com/codeallergy/sprintpb v1.0.0
