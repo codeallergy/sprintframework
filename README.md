@@ -55,12 +55,15 @@ go install github.com/google/go-licenses@v1.2.1
 
 Download and install Protoc 3.13 for your OS (optional)
 ```
-open https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.4
+open https://github.com/protocolbuffers/protobuf/releases/tag/v3.20.3
 ```
 
 Install protocol buffers
 ```
-go install github.com/protocolbuffers/protobuf@3.22.2
+cd ~/go/src/github.com/protocolbuffers
+git clone https://github.com/protocolbuffers/protobuf
+cd protobuf 
+git checkout v3.22.2
 ```
 
 Install protoc golang compiler
@@ -75,12 +78,15 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.3.0
 
 Install gRPC gateway
 ```
-go get -u github.com/grpc-ecosystem/grpc-gateway
-git checkout v2.7.3
+go get -u github.com/grpc-ecosystem/grpc-gateway/v2@v2.15.2
 ```
 
 Compile and install protoc-gen-grpc-gateway
 ```
+cd ~/go/src/github.com/grpc-ecosystem
+git clone https://github.com/grpc-ecosystem/grpc-gateway
+cd grpc-gateway
+git checkout v2.15.2
 cd ~/go/src/github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 go install
 ```
