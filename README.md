@@ -40,7 +40,7 @@ ApplicationContext -> [Core Context, Client Context...]
 Core Context -> [Server Context...]
 ```
 
-### Configure (linux):
+### Configure (mac):
 
 Install golang 1.17.13
 ```
