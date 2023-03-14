@@ -57,8 +57,7 @@ Download and install Protoc 3.13 for your OS (optional)
 ```
 open https://github.com/protocolbuffers/protobuf/releases/tag/v3.20.3
 wget [protoc-3.20.3-osx-x86_64.zip](https://github.com/protocolbuffers/protobuf/releases/download/v3.20.3/protoc-3.20.3-osx-x86_64.zip)
-unpack
-sudo cp protoc-3.20.3-osx-x86_64/bin/* /usr/local/bin
+sudo unzip protoc-3.20.3-osx-x86_64.zip -d /usr/local
 ```
 
 Install protocol buffers
