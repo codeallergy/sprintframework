@@ -53,7 +53,7 @@ sudo nano /usr/local/go/src/runtime/internal/sys/zversion.go
 ```
 Add line:
 ```
-const theVersion = `go1.17`
+const TheVersion = `go1.17`
 ```
 
 Setup env
