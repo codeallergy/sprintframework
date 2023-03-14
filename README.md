@@ -110,6 +110,8 @@ go install github.com/google/go-licenses@v1.2.1
 ```
 cd ~/go/bin
 ls
+go-bindata
+go-licenses
 protoc-gen-go		
 protoc-gen-go-grpc	
 protoc-gen-grpc-gateway	
