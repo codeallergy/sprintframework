@@ -63,19 +63,37 @@ export GOROOT=/usr/local/go
 export GOPATH=~/go
 ```
 
+Setup env (optional)
+```
+export GONOSUMDB=github.com
+```
+
+Create dirs
+```
+mkdir ~/go
+mkdir ~/go/bin
+mkdir ~/go/src
+```
+
 Download and install Protoc 3.13 for your OS (optional)
 ```
 open https://github.com/protocolbuffers/protobuf/releases/tag/v3.20.3
 wget [protoc-3.20.3-osx-x86_64.zip](https://github.com/protocolbuffers/protobuf/releases/download/v3.20.3/protoc-3.20.3-osx-x86_64.zip)
-sudo unzip protoc-3.20.3-osx-x86_64.zip -d /usr/local
+unzip protoc-3.20.3-osx-x86_64.zip -d ~/go
 ```
 
-Install protocol buffers
+Verify
+```
+protoc --version
+libprotoc 3.20.3
+```
+
+Install protocol buffers src (optional)
 ```
 cd ~/go/src/github.com/protocolbuffers
 git clone https://github.com/protocolbuffers/protobuf
 cd protobuf 
-git checkout v3.22.2
+git checkout v3.20.3
 ```
 
 Install protoc golang compiler
