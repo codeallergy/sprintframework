@@ -42,9 +42,22 @@ Core Context -> [Server Context...]
 
 ### Configure (linux):
 
+Install golang 1.17.13
+```
+wget [go1.17.13.darwin-amd64.pkg](https://go.dev/dl/go1.17.13.darwin-amd64.pkg)
+```
+
+Setup env
+```
+export PATH=$PATH:~/go/bin
+export GOPATH=~/go
+```
+
 Download and install Protoc 3.13 for your OS (optional)
 ```
 open https://github.com/protocolbuffers/protobuf/releases/tag/v3.20.3
+wget [protoc-3.20.3-osx-x86_64.zip](https://github.com/protocolbuffers/protobuf/releases/download/v3.20.3/protoc-3.20.3-osx-x86_64.zip)
+
 ```
 
 Install protocol buffers
@@ -90,4 +103,15 @@ Install support libs
 ```
 go install github.com/codeallergy/go-bindata@v1.0.1
 go install github.com/google/go-licenses@v1.2.1
+```
+
+# Verify
+
+```
+cd ~/go/bin
+ls
+protoc-gen-go		
+protoc-gen-go-grpc	
+protoc-gen-grpc-gateway	
+protoc-gen-openapiv2
 ```
