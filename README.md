@@ -101,7 +101,7 @@ go install
 
 Install support libs
 ```
-go install github.com/codeallergy/go-bindata@v1.0.1
+go install github.com/codeallergy/go-bindata@v1.0.0
 go install github.com/google/go-licenses@v1.2.1
 ```
 
