@@ -40,18 +40,7 @@ ApplicationContext -> [Core Context, Client Context...]
 Core Context -> [Server Context...]
 ```
 
-### Build
-```
-go install github.com/codeallergy/go-bindata@v1.0.1
-go install github.com/google/go-licenses@v1.2.1
-```
-
 ### Configure (linux):
-```
-./sprint gen
-./sprint create
-./sprint config set autoupdate on
-```
 
 Download and install Protoc 3.13 for your OS (optional)
 ```
@@ -97,3 +86,8 @@ cd ~/go/src/github.com/grpc-ecosystem/grpc-gateway/protoc-gen-openapiv2
 go install
 ```
 
+Install support libs
+```
+go install github.com/codeallergy/go-bindata@v1.0.1
+go install github.com/google/go-licenses@v1.2.1
+```
