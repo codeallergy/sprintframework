@@ -50,6 +50,7 @@ wget [go1.17.13.darwin-amd64.pkg](https://go.dev/dl/go1.17.13.darwin-amd64.pkg)
 Setup env
 ```
 export PATH=$PATH:~/go/bin
+export GOROOT=/usr/local/go  
 export GOPATH=~/go
 ```
 
