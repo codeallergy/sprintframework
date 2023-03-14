@@ -47,6 +47,15 @@ Install golang 1.17.13
 wget [go1.17.13.darwin-amd64.pkg](https://go.dev/dl/go1.17.13.darwin-amd64.pkg)
 ```
 
+Fix Goland IDE
+```
+sudo nano /usr/local/go/src/runtime/internal/sys/zversion.go
+```
+Add line:
+```
+const theVersion = `go1.17`
+```
+
 Setup env
 ```
 export PATH=$PATH:~/go/bin
