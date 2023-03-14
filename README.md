@@ -53,15 +53,19 @@ go install github.com/google/go-licenses@v1.2.1
 ./sprint config set autoupdate on
 ```
 
-
 Download and install Protoc 3.13 for your OS (optional)
 ```
 open https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.4
 ```
 
+Install protocol buffers
+```
+go install github.com/protocolbuffers/protobuf@3.22.2
+```
+
 Install protoc golang compiler
 ```
-go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28.1
 ```
 
 Install gRPC compiler
